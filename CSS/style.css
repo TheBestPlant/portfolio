@@ -1,8 +1,9 @@
 body {
-  font-family: system-ui, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-  background: #0f0f0f;
-  color: #f2f2f2;
+	background-color: #436343;
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #0f0f0f;
+	color: #fff6c7;
 }
