@@ -1,5 +1,5 @@
 html {
-	background: hotpink !important;
+	background: #436343;
 }
 
 body {
@@ -33,7 +33,7 @@ nav a:hover {
 	height: 300px;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 5px solid #253025;
+	border: 7px solid #253025;
 	display: block;
 	margin: 0 auto;
 }
@@ -43,7 +43,7 @@ nav a:hover {
 	height: 600px;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 5px solid #253025;
+	border: 7px solid #253025;
 	display: block;
 	margin: 0 auto;
 }
