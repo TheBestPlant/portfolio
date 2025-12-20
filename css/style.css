@@ -1,3 +1,7 @@
+html {
+	background: hotpink !important;
+}
+
 body {
 	font-family: system-ui, sans-serif;
 	max-width: 900px;
