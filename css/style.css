@@ -28,6 +28,156 @@ nav a:hover {
   color: #669666;
 }
 
+html.pizza-saucer{
+	background: #0e0e21;
+}
+
+body.pizza-saucer {
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #0e0e21;
+	color: #bd2a0d;
+}
+body.pizza-saucer nav {
+  background-color: #bd2a0d;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.pizza-saucer nav a {
+  color: #0e0e21;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+body.pizza-saucer nav a:hover {
+  color: #f24827;
+}
+
+html.paper-trail{
+	background: #4f5159;
+}
+
+body.paper-trail {
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #4f5159;
+	color: #d1be8c;
+}
+body.paper-trail nav {
+  background-color: #d1be8c;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.paper-trail nav a {
+  color: #4f5159;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+body.paper-trail nav a:hover {
+  color: #848794;
+}
+
+html.loot-bugs{
+	background: #000000;
+}
+
+body.loot-bugs {
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #000000;
+	color: #e80000;
+}
+body.loot-bugs nav {
+  background-color: #e80000;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.loot-bugs nav a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+body.loot-bugs nav a:hover {
+  color: #444444;
+}
+
+html.whisker-woods{
+	background: #9ed17d;
+}
+
+body.whisker-woods{
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #9ed17d;
+	color: #0e4734;
+}
+body.whisker-woods nav {
+  background-color: #0e4734;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.whisker-woods nav a {
+  color: #9ed17d;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+body.whisker-woods nav a:hover {
+  color: #fff099;
+}
+
+html.crazy-eights{
+	background: #296D46;
+}
+
+body.crazy-eights{
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #296D46;
+	color: #C1CCC5;
+}
+body.crazy-eights nav {
+  background-color: #C1CCC5;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.crazy-eights nav a {
+  color: #296D46;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+body.crazy-eights nav a:hover {
+  color: #e6f5eb;
+}
+
 .profile-pic{
 	width: 300px;
 	height: 300px;
