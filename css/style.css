@@ -68,3 +68,58 @@ nav a:hover {
 	display: flex;
 	justify-content: center;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6c7;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #253025;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects-grid.odd-count .project-card:first-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.project-image {
+  height: 75%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 1rem;
+  background-color: #fff6c7;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #436343;
+}
+
+.project-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}

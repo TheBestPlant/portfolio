@@ -3,8 +3,9 @@
     "",
     "\\assets",
     "\\css",
-    "\\js"
+    "\\js",
+    "\\projects"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\projects\\pizza-saucer.html",
   "PreviewInSolutionExplorer": false
 }
