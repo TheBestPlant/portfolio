@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const codeNavButtons = document.querySelectorAll(".code-nav button");
 
   function loadCodeFile(fileName) {
-    fetch(`portfolio/assets/code/${fileName}`)
+    fetch(`${fileName}`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`Could not load ${fileName}`);
