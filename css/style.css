@@ -1,5 +1,6 @@
 html {
 	background: #436343;
+	overflow-y: scroll;
 }
 
 body {
@@ -15,6 +16,7 @@ nav {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  border-radius: 16px;
 }
 
 nav a {
@@ -45,6 +47,7 @@ body.pizza-saucer nav {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  border-radius: 16px;
 }
 
 body.pizza-saucer nav a {
@@ -75,6 +78,7 @@ body.paper-trail nav {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  border-radius: 16px;
 }
 
 body.paper-trail nav a {
@@ -105,6 +109,7 @@ body.loot-bugs nav {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  border-radius: 16px;
 }
 
 body.loot-bugs nav a {
@@ -135,6 +140,7 @@ body.whisker-woods nav {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  border-radius: 16px;
 }
 
 body.whisker-woods nav a {
@@ -165,6 +171,7 @@ body.crazy-eights nav {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  border-radius: 16px;
 }
 
 body.crazy-eights nav a {
@@ -175,7 +182,7 @@ body.crazy-eights nav a {
 }
 
 body.crazy-eights nav a:hover {
-  color: #e6f5eb;
+  color: #ce5b65;
 }
 
 .profile-pic{
@@ -272,4 +279,127 @@ body.crazy-eights nav a:hover {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.projects-photo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+	flex-shrink: 0;
+}
+
+.image-frame {
+    width: 480px;
+    height: 270px;
+	border: 7px solid var(--accent);
+    border-radius: 16px;
+    overflow: hidden;
+	box-sizing: border-box;
+}
+
+.project-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+
+.projects-text{
+	flex: 1;
+	min-width: 250px;
+}
+
+body.pizza-saucer {
+  --accent: #bd2a0d;
+  --back: #0e0e21;
+  --2nd: #bd2a0d;
+  --hover: #f24827;
+}
+
+body.paper-trail {
+  --accent: #d1be8c;
+  --back: #4f5159;
+  --2nd: #d1be8c;
+  --hover: #848794;
+}
+
+body.loot-bugs {
+  --accent: #e80000;
+  --back: #000000;
+  --2nd: #e80000;
+  --hover: #444444;
+}
+
+body.whisker-woods {
+  --accent: #0e4734;
+  --back: #9ed17d;
+  --2nd: #0e4734;
+  --hover: #fff099;
+}
+
+body.crazy-eights {
+  --accent: #ce5b65;
+  --back: #296D46;
+  --2nd: #C1CCC5;
+  --hover: #ce5b65;
+}
+
+.project-link{
+	text-align: center;
+	margin: 2rem 0;
+	font-size: 2rem;
+}
+
+.project-link a{
+	color: var(--2nd);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.project-link a:hover{
+	color:var(--hover);
+}
+
+.centered{
+	text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.top-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--2nd);
+    color: var(--back);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.top-button:hover {
+    color: var(--hover);
 }
