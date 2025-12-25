@@ -403,3 +403,12 @@ body.crazy-eights {
 .top-button:hover {
     color: var(--hover);
 }
+
+.folder-buttons,
+.file-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}

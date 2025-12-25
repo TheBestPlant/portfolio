@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" class="paper-trail">
 <head>
-	<link rel="stylesheet" href="../../css/style.css">
-	<meta charset="UTF-8">
-	<title>Paper Trail</title>
-	</head>
-	<body class="paper-trail">
-	<nav>
-		<a href="../../index.html">Home</a> |
-		<a href="../../projects.html">Projects</a> |
-		<a href="../../about.html">About Me</a>
-	</nav>
+  <meta charset="UTF-8">
+  <title>Paper Trail Code</title>
 
-	<h1>Paper Trail Code</h1>
-	
-	<p>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+  <style>
+    .code-nav {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .code-nav button {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    pre {
+      background-color: #2b2b2b;
+      color: #f8f8f2;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 8px;
+      white-space: pre;
+    }
+  </style>
+</head>
+
+<body class="paper-trail">
+  <nav>
+    <a href="../../index.html">Home</a> |
+    <a href="../../projects.html">Projects</a> |
+    <a href="../../about.html">About Me</a>
+  </nav>
+
+  <div class="button-container">
+    <a href="../paper-trail.html" class="top-button">
+      Project Description
+    </a>
+  </div>
+
+  <h1>Paper Trail Code</h1>
+
+  <div class="code-nav">
+      <!-- Folder buttons -->
+      <div class="folder-buttons">
+        <button class="top-button" data-folder="audio">Audio</button>
+        <button class="top-button" data-folder="dialogue">Dialogue</button>
+        <button class="top-button" data-folder="gameplay">Gameplay</button>
+      </div>
+
+      <!-- File buttons (generated dynamically) -->
+      <div class="file-buttons" id="file-buttons"></div>
+    </div>
+
+
+  <pre><code id="code-display" class="language-csharp">Loading code...</code></pre>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-csharp.min.js"></script>
+
+  <script src="/portfolio/js/main.js"></script>
 </body>
 </html>
