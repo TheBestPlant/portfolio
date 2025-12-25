@@ -23,48 +23,56 @@ document.addEventListener("DOMContentLoaded", () => {
         path: "../../assets/code/papertrailcode/audio/RoomSound.cs"
       }
     ],
+
     dialogue: [
       {
         name: "Dialogue Display",
         path: "../../assets/code/papertrailcode/dialogue/DialogueDisplay.cs"
-      }
+      },
       {
-          name:"Dialogue System",
-          path: "../../assets/code/papertrailcode/dialogue/DialogueDisplay.cs"
+        name: "Dialogue System",
+        path: "../../assets/code/papertrailcode/dialogue/DialogueSystem.cs"
       }
     ],
+
     door: [
       { name: "Door Code", path: "../../assets/code/papertrailcode/door/Door.cs" },
       { name: "Door Interactor", path: "../../assets/code/papertrailcode/door/DoorInteractor.cs" },
       { name: "Keycard", path: "../../assets/code/papertrailcode/door/Keycard.cs" },
       { name: "Keypad", path: "../../assets/code/papertrailcode/door/Keypad.cs" },
-      { name: "keypad Interactor", path: "../../assets/code/papertrailcode/door/KeypadInteractor.cs" },
+      { name: "Keypad Interactor", path: "../../assets/code/papertrailcode/door/KeypadInteractor.cs" },
       { name: "Keypad UI", path: "../../assets/code/papertrailcode/door/KeypadUIManager.cs" },
       { name: "Riddle UI", path: "../../assets/code/papertrailcode/door/RiddleUIManager.cs" }
-    ]
+    ],
+
     interactables: [
       { name: "Grab Objects", path: "../../assets/code/papertrailcode/interactables/GrabObjects.cs" },
       { name: "Note", path: "../../assets/code/papertrailcode/interactables/Note.cs" },
       { name: "Note UI", path: "../../assets/code/papertrailcode/interactables/NoteUIManager.cs" },
       { name: "Refill", path: "../../assets/code/papertrailcode/interactables/WaterRefilStation.cs" }
-    ]
+    ],
+
     loadlevel: [
       { name: "Load Level", path: "../../assets/code/papertrailcode/loadlevel/LoadLevelButtonBridge.cs" }
-    ]
+    ],
+
     monsters: [
       { name: "Jumpscare", path: "../../assets/code/papertrailcode/monsters/JumpscareAction.cs" },
       { name: "Monster Patrol", path: "../../assets/code/papertrailcode/monsters/MonsterPatrol.cs" }
-    ]
+    ],
+
     projectiles: [
       { name: "Flame", path: "../../assets/code/papertrailcode/projectiles/Flame.cs" },
       { name: "Water", path: "../../assets/code/papertrailcode/projectiles/WaterProjectile.cs" },
       { name: "Water Thrower", path: "../../assets/code/papertrailcode/projectiles/WaterThrower.cs" }
-    ]
+    ],
+
     shadowfollow: [
-        { name: "Shadow Follow", path: "../../assets/code/papertrailcode/shadowfollow/ShadowFollow.cs"}
-    ]
+      { name: "Shadow Follow", path: "../../assets/code/papertrailcode/shadowfollow/ShadowFollow.cs" }
+    ],
+
     uitoggle: [
-        { name: "UI Toggle", path: "../../assets/code/papertrailcode/uitoggle/UIToggleManager.cs"}
+      { name: "UI Toggle", path: "../../assets/code/papertrailcode/uitoggle/UIToggleManager.cs" }
     ]
   };
 
