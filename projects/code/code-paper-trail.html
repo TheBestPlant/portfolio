@@ -27,6 +27,11 @@
       border-radius: 8px;
       white-space: pre;
     }
+
+    .top-button.active {
+      background-color: #fff6c7;
+      color: #2b2b2b;
+    }
   </style>
 </head>
 
@@ -45,8 +50,8 @@
 
   <h1>Paper Trail Code</h1>
 
-  <p>Folders:</p>
   <div class="code-nav">
+      <h2>Folders</h2>
       <!-- Folder buttons -->
       <div class="folder-buttons">
         <button class="top-button" data-folder="audio">Audio</button>
@@ -60,11 +65,10 @@
         <button class="top-button" data-folder="uitoggle">UI Toggle</button>
       </div>
 
-      <p>Files:</p>
+      <h2>Files:</h2>
       <!-- File buttons -->
       <div class="file-buttons" id="file-buttons"></div>
     </div>
-
 
   <pre><code id="code-display" class="language-csharp">Loading code...</code></pre>
 

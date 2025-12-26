@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     monsters: [
       { name: "Jumpscare", path: "../../assets/code/papertrailcode/monsters/JumpscareAction.cs" },
-      { name: "Monster Patrol", path: "../../assets/code/papertrailcode/monsters/MonsterPatrol.cs" }
+      { name: "Monster Patrol", path: "../../assets/code/papertrailcode/monsters/MonsterPatrolChase.cs" }
     ],
 
     projectiles: [
@@ -95,6 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("[data-folder]").forEach(folderButton => {
     folderButton.addEventListener("click", () => {
+      document.querySelectorAll("[data-folder]").forEach(btn =>
+        btn.classList.remove("active")
+      );
+
+      folderButton.classList.add("active");
+
       const folder = folderButton.dataset.folder;
       const files = fileMap[folder];
 
@@ -106,6 +112,11 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.textContent = file.name;
 
         btn.addEventListener("click", () => {
+          document.querySelectorAll("#file-buttons .top-button").forEach(b =>
+            b.classList.remove("active")
+          );
+
+          btn.classList.add("active");
           loadCodeFile(file.path);
         });
 
@@ -113,8 +124,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (files.length > 0) {
+        fileButtonsContainer.firstChild.classList.add("active");
         loadCodeFile(files[0].path);
       }
     });
   });
+
+  const firstFolderButton = document.querySelector("[data-folder]");
+  if (firstFolderButton) {
+    firstFolderButton.click();
+  }
 });
