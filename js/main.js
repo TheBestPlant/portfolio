@@ -68,20 +68,20 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     interactables: [
       { name: "Grab Objects", path: "../../assets/code/papertrailcode/interactables/GrabObjects.cs" },
-      { name: "Note", path: "../../assets/code/papertrailcode/interactables/Note.cs" },
+      { name: "Note Code", path: "../../assets/code/papertrailcode/interactables/Note.cs" },
       { name: "Note UI", path: "../../assets/code/papertrailcode/interactables/NoteUIManager.cs" },
-      { name: "Refill", path: "../../assets/code/papertrailcode/interactables/WaterRefilStation.cs" }
+      { name: "Refill Code", path: "../../assets/code/papertrailcode/interactables/WaterRefilStation.cs" }
     ],
     loadlevel: [
       { name: "Load Level", path: "../../assets/code/papertrailcode/loadlevel/LoadLevelButtonBridge.cs" }
     ],
     monsters: [
-      { name: "Jumpscare", path: "../../assets/code/papertrailcode/monsters/JumpscareAction.cs" },
+      { name: "Jumpscare Code", path: "../../assets/code/papertrailcode/monsters/JumpscareAction.cs" },
       { name: "Monster Patrol", path: "../../assets/code/papertrailcode/monsters/MonsterPatrolChase.cs" }
     ],
     projectiles: [
-      { name: "Flame", path: "../../assets/code/papertrailcode/projectiles/Flame.cs" },
-      { name: "Water", path: "../../assets/code/papertrailcode/projectiles/WaterProjectile.cs" },
+      { name: "Flame Code", path: "../../assets/code/papertrailcode/projectiles/Flame.cs" },
+      { name: "Water Code", path: "../../assets/code/papertrailcode/projectiles/WaterProjectile.cs" },
       { name: "Water Thrower", path: "../../assets/code/papertrailcode/projectiles/WaterThrower.cs" }
     ],
     shadowfollow: [
@@ -89,6 +89,55 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     uitoggle: [
       { name: "UI Toggle", path: "../../assets/code/papertrailcode/uitoggle/UIToggleManager.cs" }
+    ]
+    audioscripts: [
+        { name: "Audio Manager", path: "../../assets/code/whiskerwoodscode/audio/AudioManager.cs"}
+    ]
+    characterselect: [
+        { name: "Character", path: "../../assets/code/whiskerwoodscode/characterselect/Character.cs"},
+        { name: "Character Database", path: "../../assets/code/whiskerwoodscode/characterselect/CharacterDatabase.cs"},
+        { name: "Character Manager", path: "../../assets/code/whiskerwoodscode/characterselect/CharacterManager.cs"},
+        { name: "Player Code", path: "../../assets/code/whiskerwoodscode/characterselect/Player.cs"}
+    ]
+    hazard: [
+        { name: "Dialogue Balloon Edit", path: "../../assets/code/whiskerwoodscode/hazard/GMGDialogueBalloonAction.cs"},
+        { name: "Hazard Destruction", path: "../../assets/code/whiskerwoodscode/hazard/HazardDestruction.cs"}
+    ]
+    inventory: [
+         { name: "Dropped Item", path: "../../assets/code/whiskerwoodscode/inventory/DroppedItem.cs"},
+         { name: "Inventory Item", path: "../../assets/code/whiskerwoodscode/inventory/InventoryItem.cs"},
+         { name: "Inventory Item Manager", path: "../../assets/code/whiskerwoodscode/inventory/InventoryItemManager.cs"},
+         { name: "Inventory Slot", path: "../../assets/code/whiskerwoodscode/inventory/InventorySlot.cs"},
+         { name: "Item Code", path: "../../assets/code/whiskerwoodscode/inventory/Item.cs"},
+         { name: "Item Database", path: "../../assets/code/whiskerwoodscode/inventory/ItemDatabase.cs"},
+         { name: "Item Database Manager", path: "../../assets/code/whiskerwoodscode/inventory/ItemDatabaseManager.cs"},
+         { name: "UI Manager", path: "../../assets/code/whiskerwoodscode/inventory/UIManager.cs"}
+    ]
+    planting: [
+        { name: "Day Manager", path: "../../assets/code/whiskerwoodscode/planting/DayManager.cs"},
+        { name: "Day Pass Button", path: "../../assets/code/whiskerwoodscode/inventory/DayPassButton.cs"},
+        { name: "Plant Code", path: "../../assets/code/whiskerwoodscode/inventory/Plant.cs"},
+        { name: "Plant Manager", path: "../../assets/code/whiskerwoodscode/inventory/PlantManager.cs"},
+        { name: "Seed Plant Manager", path: "../../assets/code/whiskerwoodscode/inventory/SeedPlantManager.cs"}
+    ]
+    quest: [
+        { name: "Game Data", path: "../../assets/code/whiskerwoodscode/quest/GameData.cs"},
+        { name: "Quest Code", path: "../../assets/code/whiskerwoodscode/quest/Quest.cs"},
+        { name: "Quest List Manager", path: "../../assets/code/whiskerwoodscode/quest/Quest List Manager.cs"}
+    ]
+    selling: [
+        { name: "Customer Code", path: "../../assets/code/whiskerwoodscode/selling/Customer.cs"},
+        { name: "Customer Manager", path: "../../assets/code/whiskerwoodscode/selling/Customer Manager.cs"}
+    ]
+    spawn: [
+        { name: "Level Loader", path: "../../assets/code/whiskerwoodscode/spawn/LevelLoader.cs"},
+        { name: "Quit Game", path: "../../assets/code/whiskerwoodscode/spawn/QuitGameScript.cs"},
+        { name: "Spawn Manager Forest", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerForest.cs"},
+        { name: "Spawn Manager Greenhouse", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerGreenhouse.cs"},
+        { name: "Spawn Manager Outside", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerOutside.cs"},
+        { name: "Spawn Manager Shop", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerShop.cs"},
+        { name: "Spawn Manager Shop Window", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerShopWindow.cs"},
+        { name: "Spawn Manager", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManager.cs"},
     ]
   };
 
