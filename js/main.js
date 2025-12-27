@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
       inventory: [
         { name: "Dropped Item", path: "../../assets/code/whiskerwoodscode/inventory/DroppedItem.cs" },
         { name: "Inventory Item", path: "../../assets/code/whiskerwoodscode/inventory/InventoryItem.cs" },
-        { name: "Inventory Item Manager", path: "../../assets/code/whiskerwoodscode/inventory/InventoryItemManager.cs" },
+        { name: "Inventory Item Manager", path: "../../assets/code/whiskerwoodscode/inventory/InventoryItemsManager.cs" },
         { name: "Inventory Slot", path: "../../assets/code/whiskerwoodscode/inventory/InventorySlot.cs" },
         { name: "Item Code", path: "../../assets/code/whiskerwoodscode/inventory/Item.cs" },
         { name: "Item Database", path: "../../assets/code/whiskerwoodscode/inventory/ItemDatabase.cs" },
@@ -128,21 +128,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       planting: [
         { name: "Day Manager", path: "../../assets/code/whiskerwoodscode/planting/DayManager.cs" },
-        { name: "Day Pass Button", path: "../../assets/code/whiskerwoodscode/inventory/DayPassButton.cs" },
-        { name: "Plant Code", path: "../../assets/code/whiskerwoodscode/inventory/Plant.cs" },
-        { name: "Plant Manager", path: "../../assets/code/whiskerwoodscode/inventory/PlantManager.cs" },
-        { name: "Seed Plant Manager", path: "../../assets/code/whiskerwoodscode/inventory/SeedPlantManager.cs" }
+        { name: "Day Pass Button", path: "../../assets/code/whiskerwoodscode/planting/DayPassButton.cs" },
+        { name: "Plant Code", path: "../../assets/code/whiskerwoodscode/planting/Plant.cs" },
+        { name: "Plant Manager", path: "../../assets/code/whiskerwoodscode/planting/PlantManager.cs" },
+        { name: "Seed Plant Manager", path: "../../assets/code/whiskerwoodscode/planting/SeedPlantManager.cs" }
       ],
 
       quest: [
         { name: "Game Data", path: "../../assets/code/whiskerwoodscode/quest/GameData.cs" },
         { name: "Quest Code", path: "../../assets/code/whiskerwoodscode/quest/Quest.cs" },
-        { name: "Quest List Manager", path: "../../assets/code/whiskerwoodscode/quest/Quest List Manager.cs" }
+        { name: "Quest List Manager", path: "../../assets/code/whiskerwoodscode/quest/QuestListManager.cs" }
       ],
 
       selling: [
         { name: "Customer Code", path: "../../assets/code/whiskerwoodscode/selling/Customer.cs" },
-        { name: "Customer Manager", path: "../../assets/code/whiskerwoodscode/selling/Customer Manager.cs" }
+        { name: "Customer Manager", path: "../../assets/code/whiskerwoodscode/selling/CustomerManager.cs" }
       ],
 
       spawn: [
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Spawn Manager Outside", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerOutside.cs" },
         { name: "Spawn Manager Shop", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerShop.cs" },
         { name: "Spawn Manager Shop Window", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManagerShopWindow.cs" },
-        { name: "Spawn Manager", path: "../../assets/code/whiskerwoodscode/spawn/SceneSpawnManager.cs" }
+        { name: "Spawn Manager", path: "../../assets/code/whiskerwoodscode/spawn/SpawnManager.cs" }
       ]
   };
 
