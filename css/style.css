@@ -1,5 +1,5 @@
 html {
-	background: #436343;
+	background: transparent;
 	overflow-y: scroll;
 }
 
@@ -8,9 +8,10 @@ body {
 	max-width: 900px;
 	margin: auto;
 	padding: 2rem;
-	background: #436343;
+	background: var(--back);
 	color: #fff6c7;
 }
+
 nav {
   background-color: #fff6c7;
   padding: 1rem;
@@ -325,6 +326,13 @@ body.crazy-eights nav a:hover {
 	min-width: 250px;
 }
 
+body.index{
+	--accent: #253025;
+	--back: #436343;
+	--2nd: #fff6c7;
+	--hover: #669666;
+}
+
 body.pizza-saucer {
   --accent: #bd2a0d;
   --back: #0e0e21;
@@ -413,20 +421,25 @@ body.crazy-eights {
   margin-top: 0.75rem;
 }
 
-.site-footer {
-  margin-top: 4rem;
-  padding: 2rem 1rem;
+.contact-bar {
   text-align: center;
-  font-size: 1rem;
-  border-top: 2px solid rgba(255, 246, 199, 0.3);
+  margin: 0.5rem 0 2rem 0;
 }
 
-.site-footer a {
-  color: var(--accent);
+.contact-button {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  margin: 0 0.3rem;
+  background-color: var(--back);
+  color: var(--2nd);
   text-decoration: none;
-  margin: 0 0.5rem;
+  border: 2px solid var(--2nd);
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.site-footer a:hover {
-  text-decoration: underline;
+.contact-button:hover {
+  background-color: var(--2nd);
+  color: var(--hover);
 }
+
