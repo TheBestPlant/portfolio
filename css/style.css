@@ -186,6 +186,33 @@ body.crazy-eights nav a:hover {
   color: #ce5b65;
 }
 
+body.interlinked {
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #000000;
+	color: #24c23d;
+}
+body.interlinked nav {
+  background-color: #24c23d;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+}
+
+body.interlinked nav a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+body.interlinked nav a:hover {
+  color: #720095;
+}
+
 .profile-pic{
 	width: 300px;
 	height: 300px;
@@ -366,6 +393,13 @@ body.crazy-eights {
   --back: #296D46;
   --2nd: #C1CCC5;
   --hover: #ce5b65;
+}
+
+body.interlinked {
+	--accent: #24c23d;
+	--back: #000000;
+	--2nd: #24c23d;
+	--hover: #720095;
 }
 
 .project-link{
