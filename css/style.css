@@ -483,10 +483,6 @@ body.interlinked {
 	text-align: center;
 }
 
-	.blueprint-item.active {
-		display: block;
-	}
-
 .blueprint-image {
 	width: 100%;
 	max-width: 900px;
@@ -507,20 +503,16 @@ body.interlinked {
 	border: 4px solid var(--accent);
 }
 
-	.video-wrapper iframe {
-		width: 100%;
-		height: 100%;
-		display: block;
-	}
+.video-wrapper iframe {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
 
 .blueprint-item p {
 	max-width: 800px;
 	margin: 0 auto;
 	line-height: 1.6;
-}
-
-.blueprint-item {
-	display: none;
 }
 
 .blueprint-item.active {
