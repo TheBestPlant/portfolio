@@ -519,3 +519,10 @@ body.interlinked {
 	line-height: 1.6;
 }
 
+.blueprint-item {
+	display: none;
+}
+
+.blueprint-item.active {
+	display: block;
+}
