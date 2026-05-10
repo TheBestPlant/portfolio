@@ -518,3 +518,43 @@ body.interlinked {
 .blueprint-item.active {
 	display: block;
 }
+
+.image-modal {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	padding-top: 40px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 10px;
+}
+
+.close-modal {
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.blueprint-image {
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.blueprint-image:hover {
+	transform: scale(1.01);
+}

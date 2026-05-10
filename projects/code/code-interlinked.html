@@ -34,111 +34,282 @@
         <h2>Blueprints</h2>
 
         <div class="folder-buttons">
-            <button class="top-button blueprint-button" data-blueprint="inventory">
-                Inventory
+
+            <button class="top-button blueprint-button" data-blueprint="volt-cascade">
+                Volt Cascade
             </button>
 
-            <button class="top-button blueprint-button" data-blueprint="quest">
-                Quest
+            <button class="top-button blueprint-button" data-blueprint="contagion">
+                Contagion
             </button>
 
-            <button class="top-button blueprint-button" data-blueprint="planting">
-                Planting
+            <button class="top-button blueprint-button" data-blueprint="enhancements">
+                Enhancements
             </button>
 
-            <button class="top-button blueprint-button" data-blueprint="hazards">
-                Hazards
-            </button>
         </div>
     </div>
 
-    <!-- INVENTORY -->
-    <section class="blueprint-item active" id="inventory">
-        <h2>Inventory System</h2>
-
-        <img src="../../assets/photos/interlinked.jpg"
-             alt="Inventory Blueprint"
-             class="blueprint-image">
+    <!-- Contagion -->
+    <section class="blueprint-item active" id="contagion">
+        <h2>Contagion</h2>
 
         <div class="video-wrapper">
-            <iframe src="https://youtube.com/embed/KE7xb8nUInc"
-                    title="Inventory System"
+            <iframe src="https://youtube.com/embed/xyoPBHACfjc"
+                    title="Contagion"
                     frameborder="0"
+                    allow="autoplay; encrypted-media"
                     allowfullscreen>
             </iframe>
         </div>
 
         <p>
-            Multiplayer-ready inventory system with stack splitting,
-            rarity tiers, drag-and-drop, and hotbar support.
+            The final product: a gameplay ability spawns an actor that contains the mesh and decal of the contagion and dynamically resizes it. Mesh and decal made by our team's artists.
         </p>
-    </section>
 
-    <!-- QUEST -->
-    <section class="blueprint-item" id="quest">
-        <h2>Quest System</h2>
+        <br />
+        <br />
+        <br />
 
-        <img src="../../assets/photos/crazyeights.jpg"
-             alt="Quest Blueprint"
+        <img src="../../assets/photos/blueprints/ga_contagion_full.jpg"
+             alt="Contagion"
              class="blueprint-image">
 
+        <p>
+            The full gameplay ability for Contagion. After handling the widget blueprints, starts the Niagara spray and spawns the first actor, before creating a timer to spawn more until the ability is over.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/ga_contagion_resizeorspawn.jpg"
+             alt="Contagion"
+             class="blueprint-image">
+
+        <p>
+            The function that decides whether to make a placed contagion spore larger, or to spawn a new contagion spore.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/ga_contagion_widgetinteraction.jpg"
+             alt="Contagion"
+             class="blueprint-image">
+
+        <p>
+            Handles the cooldown percentage in the HUD.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/bp_contagion_full.jpg"
+             alt="Contagion"
+             class="blueprint-image">
+
+        <p>
+            The full blueprint for the placed contagion spores. Handles poisoning enemies.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/bp_contagion_overlap.jpg"
+             alt="Contagion"
+             class="blueprint-image">
+
+        <p>
+            When overlapping with an enemy, contagion poisons that enemy.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+    </section>
+
+    <!-- Volt Casacde -->
+    <section class="blueprint-item" id="volt-cascade">
+        <h2>Volt Cascade</h2>
+
+        <img src="../../assets/photos/voltcascade.gif"
+             alt="Volt Cascade Final Product"
+             class="blueprint-image">
+
+        <p>
+            The Final Product: Volt Cascade is a gameplay ability that spawns lightning formed out of smaller lightning segments that are dynamically resized to form the large chains. I worked on the blueprints, the VFX, and altered the materials.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/voltcascade_viewport.gif"
+             alt="Volt Cascade Viewport View"
+             class="blueprint-image">
+
+        <p>
+            What bp_VoltCascade looks like in the viewport. These segments are used as building blocks to create the full lightning strike, then all lightning blocks in a segment are equally scaled to keep the lightning strike looking visually appealing.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/voltcascade_materials.gif"
+             alt="Volt Cascade Materials"
+             class="blueprint-image">
+
+        <p>
+            Here are the 6 materials that volt cascade chooses from when created. The texture was made by one of our artists, and then handed off to me to work on the effects.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
         <div class="video-wrapper">
-            <iframe src="https://youtube.com/embed/K1vyBACW1K8"
-                    title="Quest System"
+            <iframe src="https://youtube.com/embed/Bf6NQkqAjxk"
+                    title="Volt Cascade Niagara System"
                     frameborder="0"
+                    allow="autoplay; encrypted-media"
                     allowfullscreen>
             </iframe>
         </div>
 
         <p>
-            Modular quest architecture supporting objectives,
-            rewards, and branching progression.
+            This is the full settings for the Niagara System handling the sparks on Volt Cascade.
         </p>
-    </section>
 
-    <!-- PLANTING -->
-    <section class="blueprint-item" id="planting">
-        <h2>Planting System</h2>
+        <br />
+        <br />
+        <br />
 
-        <img src="../../assets/photos/lethallootbugs.jpg"
-             alt="Planting Blueprint"
+        <img src="../../assets/photos/blueprints/ga_voltcascade1.jpg"
+             alt="Volt Cascade Gameplay Ability Main Blueprints"
              class="blueprint-image">
 
-        <div class="video-wrapper">
-            <iframe src="https://youtube.com/embed/1hXAOS5EyxE"
-                    title="Planting System"
-                    frameborder="0"
-                    allowfullscreen>
-            </iframe>
-        </div>
-
         <p>
-            Crop growth framework with watering, seasons,
-            harvest states, and save persistence.
+            Logic when GA_VoltCascade is originally called. Checks charges, updates widgets, then raytraces to determine if the shot was a hit. If successful, first lightning strike will happen, and chain function will be called. If the player missed, a single bolt will shoot out, hitting where you missed.
         </p>
-    </section>
 
-    <!-- HAZARDS -->
-    <section class="blueprint-item" id="hazards">
-        <h2>Hazard System</h2>
+        <br />
+        <br />
+        <br />
 
-        <img src="../../assets/photos/aboutme.jpg"
-             alt="Hazard Blueprint"
+        <img src="../../assets/photos/blueprints/ga_voltcascade_miss.jpg"
+             alt="Volt Cascade Miss Logic"
              class="blueprint-image">
 
-        <div class="video-wrapper">
-            <iframe src="https://youtube.com/embed/s4Cmbh15mho"
-                    title="Hazard System"
-                    frameborder="0"
-                    allowfullscreen>
-            </iframe>
-        </div>
+        <p>
+            Handles when a player misses their shot. Spawns the lightning between the player and the raytrace end.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/ga_voltcascade_chain.jpg"
+             alt="Volt Cascade Chain Logic"
+             class="blueprint-image">
 
         <p>
-            Dynamic environmental hazards with damage zones,
-            status effects, and AI reactions.
+            Handles the chain logic. Checks if any AI are within 5 meters of the last hit enemy, and if yes, chains lightning between them, and then sets that AI to the last hit enemy, allowing this chain to continue until there are no AI left to hit.
         </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/ga_voltcascade_spawnlightning.jpg"
+             alt="Volt Cascade Spawn Lightning Logic"
+             class="blueprint-image">
+
+        <p>
+            Handles the logic of spawning lightning. The first shot can be up to 30 meters, while the chains can only be up to 5, and each lightning segment is 5 meters long. This handles resizing and spawning lightning segments all in a line so it looks like one long lightning strike, rather than 5 segments.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
     </section>
+
+    <!-- Enhancements -->
+    <section class="blueprint-item" id="enhancements">
+        <h2>Enhancements</h2>
+
+        <img src="../../assets/photos/enhancements.gif"
+             alt="Enhancements Demo"
+             class="blueprint-image">
+
+        <p>
+            This is a demo of the final Enhancements design. I implemented the entire mechanic, including the Widget functionality, solo over 2 weeks. Integrated with all spells and the player blueprint, every enhancement buffs a different stat, and may debuff another stat as well. Nitro-Propulsor increases the max range of our default fire, doubling it.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/pda_enhancements.jpg"
+             alt="Enhancements Primary Data Asset"
+             class="blueprint-image">
+
+        <p>
+            These are all 16 Data Assets representing each enhancement. All are children of a Primary Data Asset, and store their name, their flavor text, their buffed stat number, their debuffed stat number (if applicable), their buffed stat name, their debuffed stat name (if applicable), and the texture shown in the Widget to represent the enhancement. All enhancements inherit "Stat Message" function from PDA_Enhancements that each data asset overwrites, which is the function that changes the text in the enhancements widget to display the correct information..
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/wbp_enhancement_generaterandenhancement.jpg"
+             alt="Enhancements Random Enhancement Generation"
+             class="blueprint-image">
+
+        <p>
+            This is the function within WBP_Enhancements that generates a random enhancement for the player to pick up. This function is called whenever the player presses "f" on a dead enemy.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/wbp_enhancement_setstats.jpg"
+             alt="Enhancements Set Stats"
+             class="blueprint-image">
+
+        <p>
+            This is the function from within WBP_Enhancements that implements the buffs and debufs from an enhancements. Enhancements are delegated by its "slot type" into a separate function, then functions within the corresponding spell (or the player) are called.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img src="../../assets/photos/blueprints/wbp_enhancement_takeordestroy.jpg"
+             alt="Take or Destroy Enhancements"
+             class="blueprint-image">
+
+        <p>
+            When the player hits the "Take Enhancement" button, set stats is called, before deleting the reference to the old enhancement in its slot (if there was one) and resetting its stat change. Then the Widget closes and the game returns to normal.
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+    </section>
+
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <script src="../../js/main.js"></script>
 
