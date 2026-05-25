@@ -333,12 +333,6 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-const slides = document.querySelectorAll('.carousel-slide');
-const nextBtn = document.getElementById('nextBtn');
-const prevBtn = document.getElementById('prevBtn');
-let currentIndex = 0;
-let players = [];
-
 // =========================
 // Video Carousel
 // =========================
