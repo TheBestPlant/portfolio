@@ -355,11 +355,13 @@ function onYouTubeIframeAPIReady() {
 
         if (playerEl) {
             const videoId = playerEl.getAttribute('data-video-id');
+
             players[index] = new YT.Player(playerEl.id, {
                 videoId: videoId,
                 playerVars: {
                     'rel': 0,
-                    'modestbranding': 1
+                    'modestbranding': 1,
+                    'controls': 1
                 }
             });
         } else {
@@ -384,5 +386,7 @@ function changeSlide(direction) {
     slides[currentIndex].classList.add('active');
 }
 
-nextBtn.addEventListener('click', () => changeSlide('next'));
-prevBtn.addEventListener('click', () => changeSlide('prev'));
+if (nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', () => changeSlide('next'));
+    prevBtn.addEventListener('click', () => changeSlide('prev'));
+}
