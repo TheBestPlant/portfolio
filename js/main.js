@@ -364,4 +364,3 @@ if (nextBtn && prevBtn) {
     nextBtn.addEventListener('click', () => changeSlide('next'));
     prevBtn.addEventListener('click', () => changeSlide('prev'));
 }
-}
