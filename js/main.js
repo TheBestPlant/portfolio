@@ -332,3 +332,57 @@ document.addEventListener("keydown", (e) => {
         modal.style.display = "none";
     }
 });
+
+const slides = document.querySelectorAll('.carousel-slide');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+let currentIndex = 0;
+let players = [];
+
+// =========================
+// Video Carousel
+// =========================
+
+const slides = document.querySelectorAll('.carousel-slide');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+let currentIndex = 0;
+let players = [];
+
+function onYouTubeIframeAPIReady() {
+    slides.forEach((slide, index) => {
+        const playerEl = slide.querySelector('.yt-player');
+
+        if (playerEl) {
+            const videoId = playerEl.getAttribute('data-video-id');
+            players[index] = new YT.Player(playerEl.id, {
+                videoId: videoId,
+                playerVars: {
+                    'rel': 0,
+                    'modestbranding': 1
+                }
+            });
+        } else {
+            players[index] = null;
+        }
+    });
+}
+
+function changeSlide(direction) {
+    if (players[currentIndex] && typeof players[currentIndex].pauseVideo === 'function') {
+        players[currentIndex].pauseVideo();
+    }
+
+    slides[currentIndex].classList.remove('active');
+
+    if (direction === 'next') {
+        currentIndex = (currentIndex + 1) % slides.length;
+    } else if (direction === 'prev') {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    }
+
+    slides[currentIndex].classList.add('active');
+}
+
+nextBtn.addEventListener('click', () => changeSlide('next'));
+prevBtn.addEventListener('click', () => changeSlide('prev'));
