@@ -340,7 +340,7 @@ let currentIndex = 0;
 let players = [];
 
 // =========================
-// Video Carousel (Simple)
+// Video Carousel
 // =========================
 
 const slides = document.querySelectorAll('.carousel-slide');
