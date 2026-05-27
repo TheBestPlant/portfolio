@@ -213,6 +213,68 @@ body.interlinked nav a:hover {
   color: #720095;
 }
 
+html.stargazing {
+	background: #05001e;
+}
+
+body.stargazing {
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #05001e;
+	color: #fec506;
+}
+body.stargazing nav {
+  background-color: #fec506;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+}
+
+body.stargazing nav a {
+	color: #05001e;
+	text-decoration: none;
+	margin: 0 1rem;
+	font-weight: bold;
+}
+
+body.stargazing nav a:hover {
+	color: #5f4798;
+}
+
+html.area {
+	background: #010201;
+}
+
+body.area {
+	font-family: system-ui, sans-serif;
+	max-width: 900px;
+	margin: auto;
+	padding: 2rem;
+	background: #010201;
+	color: #ffc000;
+}
+body.area nav {
+  background-color: #ffc000;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+}
+
+body.area nav a {
+	color: #010201;
+	text-decoration: none;
+	margin: 0 1rem;
+	font-weight: bold;
+}
+
+body.area nav a:hover {
+	color: #94e500;
+}
+
 .profile-pic{
 	width: 300px;
 	height: 300px;
@@ -400,6 +462,20 @@ body.interlinked {
 	--back: #000000;
 	--2nd: #24c23d;
 	--hover: #720095;
+}
+
+body.stargazing {
+	--accent: #fec506;
+	--back: #05001e;
+	--2nd: #fec506;
+	--hover: #5f4798;
+}
+
+body.area {
+	--accent: #ffc000;
+	--back: #010201;
+	--2nd: #ffc000;
+	--hover: #04e500;
 }
 
 .project-link {
