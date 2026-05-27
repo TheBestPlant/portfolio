@@ -226,11 +226,11 @@ body.stargazing {
 	color: #fec506;
 }
 body.stargazing nav {
-  background-color: #fec506;
-  padding: 1rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  border-radius: 16px;
+	background-color: #fec506;
+	padding: 1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	border-radius: 16px;
 }
 
 body.stargazing nav a {
@@ -257,11 +257,11 @@ body.area {
 	color: #ffc000;
 }
 body.area nav {
-  background-color: #ffc000;
-  padding: 1rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  border-radius: 16px;
+	background-color: #ffc000;
+	padding: 1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	border-radius: 16px;
 }
 
 body.area nav a {
