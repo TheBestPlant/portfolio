@@ -1,11 +1,14 @@
-document.write(`
+const headerHTML = `
   <header class="site-header">
-    <a href="/" class="site-title">Savannah Balistreri <br> Gameplay Programmer and Technical Producer</a>
+    <a href="./" class="site-title">
+      Savannah Balistreri <br> Gameplay Programmer and Technical Producer
+    </a>
     <nav class="nav-links">
-      <a href="/about">About</a>
-      <a href="/projects">Projects</a>
-      <a href="/contact">Contact</a>
+      <a href="about">About</a>
+      <a href="projects">Projects</a>
+      <a href="contact">Contact</a>
     </nav>
   </header>
-  </body>
-`);
+`;
+
+document.getElementById("header-placeholder").innerHTML = headerHTML;
